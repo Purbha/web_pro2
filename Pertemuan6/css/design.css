@@ -1,0 +1,50 @@
+@charset "utf-8";
+#wrapper {
+	padding: 0px; width: 960px; margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto;
+}
+#header {
+	background-color: #597700; text-align: center; padding: 10px; margin: 0px;
+}
+#header p {
+	font-family: "Lucida Console", Monaco, monospace; font-style: italic; font-weight: bold;
+	color: #DBFF6C; text-decoration: underline;	
+}
+#footer {
+	background-color: #B6F200; margin: 0px; padding: 5px; text-align: center;
+}
+#footer p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 12px; color: #4D6600;
+}
+#menu {
+	width: 200px; margin: 0px; padding: 0px; text-align: center; float: left; display: block;
+	border-right-width: 1px; border-right-style: solid; border-right-color: #CCC;
+}
+#page {
+	margin: 0px; padding: 0px; width: 100%; height: auto; background-color: #FFF;
+}
+#content {
+	width: 700px; margin: 0px; padding: 10px; float: right;
+}
+li {
+	list-style-type: none; padding-top: 20px; padding-right: 0px; padding-bottom: 20px;
+	padding-left: 0px; font-family: Impact; font-size: 16px; 
+}
+
+ul {
+	margin: 0px; padding-top: 20px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px;
+}
+h1 {
+	font-family: Tahoma, Geneva, sans-serif; color: #CF9;
+}
+h2 {
+	font-family: "Comic Sans MS", cursive; color: #666; text-align: center; width: 100%;
+}
+body {
+	background-color: #CCC; margin: 0px; padding: 0px;
+}
+.clear {
+	clear: both; margin: 0px; padding: 0px;
+}
+.gambar {
+	margin: 10px; padding: 0px; height: 150px; width: 150px;
+}

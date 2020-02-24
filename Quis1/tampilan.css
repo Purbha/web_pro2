@@ -1,0 +1,79 @@
+@charset "utf-8";
+table {
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	border: 1px solid #CCC;
+}
+th {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	font-family: Impact;
+	font-weight: normal;
+	background-color: #009;
+	color: #FFF;
+	font-size: 14px;
+	border-top-width: 5px;
+	border-bottom-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	text-align: center;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+}
+h1 {
+	font-family: Broadway;
+	color: #666;
+	text-decoration: underline;
+}
+input[type=submit]
+{
+	margin: 0px;
+	padding: 10px;
+	font-family: Broadway;
+	color: #FFF;
+	background-color: #006;
+	border: 1px solid #CCC;
+}
+input {
+	background-color: #FF6;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
+	margin: 0px;
+	padding: 5px;
+}
+td {
+	margin: 0px;
+	padding: 5px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+textarea {
+	background-color: #FF6;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
+	margin: 0px;
+	padding: 5px;
+}
+
+body {
+	background-color: #FFF;
+}
+.table_nama {
+	font-style: italic;
+	background-color: #FF9;
+	font-weight: bold;
+}

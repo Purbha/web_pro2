@@ -1,0 +1,43 @@
+@charset "utf-8";
+td {
+	border: 1px solid #CCC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 5px;
+}
+table {
+	border-collapse: collapse;
+	padding: 0px;
+	width: 100%;
+	margin: 0px;
+}
+th {
+	font-family: Impact;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFF;
+	background-color: #666;
+	text-align: center;
+	margin: 0px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+}
+input[type=submit],input[type=reset] {
+	margin: 0px;
+	padding: 5px;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 16px;
+	color: #CCC;
+	background-color: #990;
+	font-weight: normal;
+	width: 100px;
+}
+.table_footer {
+	background-color: #CCC;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}

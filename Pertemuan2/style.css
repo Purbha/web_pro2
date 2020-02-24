@@ -1,0 +1,25 @@
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/@charset*/
+@charset "utf-8";
+.isi {
+	margin: 0px;
+	padding: 5px;
+}
+.judul {
+	margin: 0px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 30px;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#paragraf {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+	color: #666;
+}
