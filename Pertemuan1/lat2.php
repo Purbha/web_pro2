@@ -8,11 +8,11 @@
 			color: #FFFFFF;
 			background-color: #FF0000;
 			padding: 5px;
-			font-weight:bold;
+			font-weight:bold;			
 		}
 		input[type="text"]
 		{
-			padding: 5px;
+			padding: 10px;
 			font-family: "Courier New", Courier, monospace;
 			font-size: 11px;
 		}
@@ -30,7 +30,7 @@
         	<td>Username</td><td><input type="text" name="user" maxlength="50" size="25" /></td>
         </tr>	
     	<tr>
-        	<td>Password</td><td><input type="text" name="pass" maxlength="50" size="25" /></td>
+        	<td></td><td><input type="text" name="pass" maxlength="50" size="25" /></td>
         </tr>	
     	<tr>
         	<td>Database</td><td><input type="text" name="db" maxlength="50" size="25"  /></td>
