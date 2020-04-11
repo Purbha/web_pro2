@@ -1,3 +1,32 @@
+<script type="text/javascript">
+	function cekform()
+	{
+		if (document.getElementById('brg_nama').value == '')
+		{
+			alert('Nama barang tidak boleh kosong');
+			document.getElementById('brg_nama').focus();
+			return false;
+		}
+		else if (document.getElementById('brg_stok').value == '')
+		{
+			alert('Stok tidak boleh kosong');
+			document.getElementById('brg_stok').focus();
+			return false;
+		}
+		else if (document.getElementById('brg_harga').value == '')
+		{
+			alert('Harga tidak boleh kosong');
+			document.getElementById('brg_harga').focus();
+			return false;
+		}
+		else
+		{
+			alert('Edit data berhasil');
+			return true;			
+		}
+	}
+</script>
+
 <?php
 	$data = ambil_barang($_GET['kdbrg']);
 	while($row = mysqli_fetch_array($data))
@@ -15,7 +44,7 @@
 	(<a href="index.php?page=master_barang">View Barang</a>)
 </h2>
 <table>
-    <form action="index.php?page=master_barang" method="post">
+    <form action="index.php?page=master_barang" method="post" onsubmit="return cekform()">
     <tr><td>Kode</td><td><?php echo $kdbrg ?></td></tr>
     <tr>
     	<td>Nama Barang</td>

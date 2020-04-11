@@ -10,7 +10,6 @@
     <?php
 		$no = 1;
 		$data = ambil_barang();
-		
 		while($row = mysqli_fetch_array($data))
 		{
 			$kdbrg = $row['kdbrg'];
@@ -25,11 +24,10 @@
 				echo "<td align='center'>".tanggal($row['brg_create'])."</td>";
 				echo "<td align='center'>".tanggal($row['brg_update'])."</td>";
 				echo "<td align='center'>";
-	?>
+		?>
         <a href='index.php?page=edit_barang&kdbrg=<?php echo $kdbrg ?>'>Update</a>&nbsp;
         <a href='index.php?page=delete_barang&kdbrg=<?php echo $kdbrg ?>'>Delete</a>
-
-	<?php
+    	<?php
         		echo "</td>";			
 			echo "</tr>";
 			$no++;
