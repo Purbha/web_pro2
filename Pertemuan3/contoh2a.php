@@ -1,21 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Contoh 2a</title>
-<style type="text/css">
-body {
-	background-color: #CCC;
-}
-th ,td {
-	padding: 5px;
-	border: 1px solid #999;
-}
-table {
-	background-color: #FFF;
-	border-collapse:collapse;
-}
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contoh 2a</title>
+    <style type="text/css">
+    body {
+        background-color: #CCC;
+    }
+    th ,td {
+        padding: 5px;
+        border: 1px solid #999;
+    }
+    table {
+        background-color: #FFF;
+        border-collapse:collapse;
+    }
+    </style>
 </head>
 <body>
 <form action="contoh2b.php" method="post">

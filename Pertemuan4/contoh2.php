@@ -1,27 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>View Data Barang</title>
-<style type="text/css">
-td, th {
-	border: 1px solid #999;
-	padding: 10px;
-	margin: 0px;
-}
-table {
-	border-collapse:collapse;
-}
-
-th {
-	font-family: "Comic Sans MS", cursive;
-	background-color: #CCC;
-	margin: 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-}
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>View Data Barang</title>
+    <style type="text/css">
+    td, th {
+        border: 1px solid #999;
+        padding: 10px;
+        margin: 0px;
+    }
+    table {
+        border-collapse:collapse;
+    }
+    
+    th {
+        font-family: "Comic Sans MS", cursive;
+        background-color: #CCC;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    </style>
 </head>
 <?php
 	$con = mysqli_connect("127.0.0.1","dbjual","dbjual","dbjual");

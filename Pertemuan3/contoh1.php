@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Contoh 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contoh 1</title>
 </head>
 <script type="text/javascript">
 function CekForm()
