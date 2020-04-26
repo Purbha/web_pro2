@@ -54,4 +54,3 @@
 	<br />
 </form>
 <?php include('detail_transaksi.php') ?>
-<?php include('sementara_transaksi.php') ?>
