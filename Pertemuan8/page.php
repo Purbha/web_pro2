@@ -9,8 +9,6 @@
 		//Master Pelanggan
 		else if ($_GET['page'] == "master_pelanggan") { require('pelanggan/view_pelanggan.php'); }
 		else if ($_GET['page'] == "add_pelanggan") { require('pelanggan/add_pelanggan.php'); }
-		else if ($_GET['page'] == "edit_pelanggan") { require('pelanggan/edit_pelanggan.php'); }
-		else if ($_GET['page'] == "delete_pelanggan") { require('pelanggan/delete_pelanggan.php'); }
 		else { require('home.php'); }
 	}
 	else
