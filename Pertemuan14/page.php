@@ -12,7 +12,10 @@
 		else if ($_GET['page'] == "edit_pelanggan") { require('pelanggan/edit_pelanggan.php'); }
 		else if ($_GET['page'] == "delete_pelanggan") { require('pelanggan/delete_pelanggan.php'); }
 		//Master Transaksi
-		else if ($_GET['page'] == "add_transaksi") { require('transaksi/add_transaksi.php'); }		
+		else if ($_GET['page'] == "master_transaksi") { require('transaksi/view_transaksi.php'); }
+		else if ($_GET['page'] == "add_transaksi") { require('transaksi/add_transaksi.php'); }
+		else if ($_GET['page'] == "detail_transaksi") { require('transaksi/view_transaksi_detail.php'); }
+		
 		//Error Link
 		else { require('home.php'); }
 	}
