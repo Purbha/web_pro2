@@ -10,7 +10,7 @@
 		if ($_POST['operator'] == "edit_pelanggan") { edit_pelanggan(); }
 		if ($_POST['operator'] == "delete_pelanggan") { delete_pelanggan(); }
 		//Transaksi
-		//if ($_POST['operator'] == "add_sementara") { input_sementara(); }
-		//if ($_POST['operator'] == "add_transaksi") { input_transaksi(); }
+		if ($_POST['operator'] == "add_sementara") { input_sementara(); }
+		if ($_POST['operator'] == "add_transaksi") { input_transaksi(); }
 	}
 ?>

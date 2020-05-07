@@ -1,5 +1,4 @@
 <?php
-
 	function delete_sementara()
 	{
 		$konek = con();
@@ -16,36 +15,6 @@
 		if (!$query) { echo mysqli_error($konek); } else { return $query; } 
 	}
 
-	/*
-	function ambil_transaksi($kode=NULL,$field=NULL)
-	{
-		$konek = con();
-		if ($kode != NULL) { $cari="WHERE $field LIKE '%$kode%'"; } else { $cari=""; }
-		$sql = "SELECT * FROM transaksi A INNER JOIN pelanggan B ON A.kdpel=B.kdpel $cari 
-			ORDER BY idtrans DESC";
-		$query = mysqli_query($konek,$sql);			
-		if (!$query) { echo mysqli_error($konek); } else { return $query; } 		
-	}
-	
-	
-	function ambil_detail_transaksi($kode=NULL)
-	{
-		$konek = con();
-		if ($kode != NULL) { $cari="WHERE idtrans = '$kode'"; } else { $cari=""; }
-		$query = mysqli_query($konek,"SELECT * FROM detail A INNER JOIN barang B ON A.kdbrg=B.kdbrg $cari 
-			ORDER BY brg_nama ASC");
-		if (!$query) { echo mysqli_error($konek); } else { return $query; } 		
-	}
-	
-	function ambil_sementara($kdbrg=NULL)
-	{
-		$konek = con();
-		if ($kdbrg != NULL) { $cari="WHERE A.kdbrg='$kdbrg'"; } else { $cari=""; }
-		$query = mysqli_query($konek,"SELECT * FROM sementara A INNER JOIN barang B ON A.kdbrg=B.kdbrg 
-			$cari ORDER BY B.brg_nama ASC");
-		if (!$query) { echo mysqli_error($konek); } else { return $query; } 
-	}
-		
 	function input_sementara()
 	{
 		$konek = con();
@@ -68,6 +37,15 @@
 		}
 		$result = mysqli_query($konek,$sql);
 		if (!$result) { echo mysqli_error($konek); }			
+	}
+
+	function ambil_sementara($kdbrg=NULL)
+	{
+		$konek = con();
+		if ($kdbrg != NULL) { $cari="WHERE A.kdbrg='$kdbrg'"; } else { $cari=""; }
+		$query = mysqli_query($konek,"SELECT * FROM sementara A INNER JOIN barang B ON A.kdbrg=B.kdbrg 
+			$cari ORDER BY B.brg_nama ASC");
+		if (!$query) { echo mysqli_error($konek); } else { return $query; } 
 	}
 
 	function input_transaksi()
@@ -108,9 +86,8 @@
 		delete_sementara();
 		echo '<script type="text/javascript">';
 		echo 'alert("Data Berhasil Di Input");';
-		echo 'window.location.assign("http://localhost/web_pro2/pertemuan12-14/index.php?page=add_transaksi")';
+		echo 'window.location.assign("http://localhost:81/web_pro2/pertemuan11/index.php?page=add_transaksi")';
 		echo '</script>';	
 	}
-	*/
 	
 ?>
