@@ -4,4 +4,5 @@
     <li><a href="index.php?page=master_pelanggan">Master Pelanggan</a></li>
     <li><a href="index.php?page=add_transaksi">Transaksi</a></li>
     <li><a href="index.php?page=master_transaksi">Laporan</a></li>
+    <li><a href="index.php?page=summary">Summary</a></li>
 </ul>

@@ -14,8 +14,6 @@
 		//Master Transaksi
 		else if ($_GET['page'] == "master_transaksi") { require('transaksi/view_transaksi.php'); }
 		else if ($_GET['page'] == "add_transaksi") { require('transaksi/add_transaksi.php'); }
-		else if ($_GET['page'] == "detail_transaksi") { require('transaksi/view_transaksi_detail.php'); }
-		
 		//Error Link
 		else { require('home.php'); }
 	}

@@ -1,5 +1,4 @@
 <?php
-
 	function ambil_transaksi($kode=NULL,$field=NULL)
 	{
 		$konek = con();
@@ -16,15 +15,6 @@
 		$sql = "SELECT idtrans FROM transaksi WHERE idtrans like '%$tgl%' ORDER BY idtrans DESC LIMIT 1";
 		$query = mysqli_query($konek,$sql);
 		if (!$query) { echo mysqli_error($konek); } else { return $query; } 
-	}
-	
-	function ambil_detail_transaksi($kode=NULL)
-	{
-		$konek = con();
-		if ($kode != NULL) { $cari="WHERE idtrans = '$kode'"; } else { $cari=""; }
-		$query = mysqli_query($konek,"SELECT * FROM detail A INNER JOIN barang B ON A.kdbrg=B.kdbrg $cari 
-			ORDER BY brg_nama ASC");
-		if (!$query) { echo mysqli_error($konek); } else { return $query; } 		
 	}
 	
 	function ambil_sementara($kdbrg=NULL)
@@ -108,6 +98,5 @@
 		echo 'alert("Data Berhasil Di Input");';
 		echo 'window.location.assign("http://localhost:81/web_pro2/pertemuan12/index.php?page=add_transaksi")';
 		echo '</script>';	
-	}
-	
+	}	
 ?>

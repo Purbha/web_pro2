@@ -106,7 +106,7 @@
 		delete_sementara();
 		echo '<script type="text/javascript">';
 		echo 'alert("Data Berhasil Di Input");';
-		echo 'window.location.assign("http://localhost/web_pro2/pertemuan12-14/index.php?page=add_transaksi")';
+		echo 'window.location.assign("http://localhost:81/web_pro2/pertemuan14/index.php?page=add_transaksi")';
 		echo '</script>';	
 	}
 	
