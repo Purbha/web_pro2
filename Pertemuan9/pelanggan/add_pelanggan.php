@@ -43,8 +43,8 @@
     <tr>
     	<td>Jenis Kelamin</td>
         <td>
-        	<input type="radio" value="1" checked="checked"/>Pria&nbsp;
-           	<input type="radio" value="0" />Wanita
+        	<input type="radio" value="1" name="pel_jk" checked="checked"/>Pria&nbsp;
+           	<input type="radio" value="0" name="pel_jk" />Wanita
 	    </td>
     </tr>
     <tr>
@@ -54,9 +54,9 @@
     <tr>
     	<td>Status Pernikahan</td>
         <td>
-        	<input type="radio" value="0" checked="checked" />Belum Menikah&nbsp;
-           	<input type="radio" value="1" />Sudah Menikah&nbsp;
-           	<input type="radio" value="2" />Janda / Duda
+        	<input type="radio" value="0" name="pel_kawin" checked="checked" />Belum Menikah&nbsp;
+           	<input type="radio" value="1" name="pel_kawin" />Sudah Menikah&nbsp;
+           	<input type="radio" value="2" name="pel_kawin" />Janda / Duda
         </td>
    	</tr>
     <tr>
