@@ -8,7 +8,9 @@
 <body>
 <div id="wrapper">
 
-    <div id="header"><?php require("header.php"); ?></div>
+    <div id="header">
+    	<?php require("header.php"); ?>
+    </div>
 
 	<div id="page">
     	<div id="menu"><?php require("menu.php"); ?></div>

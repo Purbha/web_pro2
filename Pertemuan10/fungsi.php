@@ -34,6 +34,10 @@
 				$no = substr($urut['idtrans'],6,4);
 				$no = intval($no);
 				$no++;
+				$no = sprintf("%04d",$no);
+				/*
+				$no = intval($no);
+				$no++;
 				if ($no < 10)
 				{
 					$no = '000'.strval($no);
@@ -50,6 +54,7 @@
 				{
 					$no = strval($no);
 				}
+				*/
 			}
 		}
 		else

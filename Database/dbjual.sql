@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100411
 File Encoding         : 65001
 
-Date: 2020-05-07 15:13:38
+Date: 2020-05-18 13:05:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,10 +34,10 @@ CREATE TABLE `barang` (
 -- ----------------------------
 -- Records of barang
 -- ----------------------------
-INSERT INTO `barang` VALUES ('BR001', 'Seagate Skyhawk 2TB Sata', '735000', '-4', 'HARD DISK', '1', '2014-03-04 21:22:28', '2020-05-07 13:52:08');
+INSERT INTO `barang` VALUES ('BR001', 'Seagate Skyhawk 2TB Sata', '735000', '-6', 'HARD DISK', '1', '2014-03-04 21:22:28', '2020-05-16 10:24:51');
 INSERT INTO `barang` VALUES ('BR002', 'Seagate Barracuda 2TB', '745000', '1', 'HARD DISK', '0', '2014-03-04 21:22:28', '2020-05-07 13:51:50');
-INSERT INTO `barang` VALUES ('BR003', 'VGEN DDR 3 - 4 GB PC 12800', '800000', '8', 'MEMORY', '0', '2014-03-04 21:22:28', '2020-05-07 13:41:15');
-INSERT INTO `barang` VALUES ('BR004', 'TEAM DELTA DDR4 8GB (4GBx2) PC2400', '1520000', '7', 'MEMORY', '1', '2014-03-04 21:22:28', '2020-05-07 13:52:08');
+INSERT INTO `barang` VALUES ('BR003', 'VGEN DDR 3 - 4 GB PC 12800', '800000', '-4', 'MEMORY', '0', '2014-03-04 21:22:28', '2020-05-07 15:52:20');
+INSERT INTO `barang` VALUES ('BR004', 'TEAM DELTA DDR4 8GB (4GBx2) PC2400', '1520000', '6', 'MEMORY', '1', '2014-03-04 21:22:28', '2020-05-16 10:24:51');
 INSERT INTO `barang` VALUES ('BR005', 'Ram DDR4 Laptop / Sodimm 4GB Team Elite 2666', '499000', '23', 'MEMORY', '1', '2019-03-19 09:39:47', '2020-05-07 13:51:19');
 
 -- ----------------------------
@@ -70,6 +70,29 @@ INSERT INTO `detail` VALUES ('2005070003', 'BR004', '3', '1520000', '2020-05-07 
 INSERT INTO `detail` VALUES ('2005070004', 'BR001', '4', '735000', '2020-05-07 08:51:59', '2020-05-07 08:51:59');
 INSERT INTO `detail` VALUES ('2005070005', 'BR001', '2', '735000', '2020-05-07 08:52:08', '2020-05-07 08:52:08');
 INSERT INTO `detail` VALUES ('2005070005', 'BR004', '2', '1520000', '2020-05-07 08:52:08', '2020-05-07 08:52:08');
+INSERT INTO `detail` VALUES ('2005070006', 'BR003', '12', '800000', '2020-05-07 10:52:20', '2020-05-07 10:52:20');
+INSERT INTO `detail` VALUES ('2005160001', 'BR001', '2', '735000', '2020-05-16 05:24:51', '2020-05-16 05:24:51');
+INSERT INTO `detail` VALUES ('2005160001', 'BR004', '1', '1520000', '2020-05-16 05:24:51', '2020-05-16 05:24:51');
+
+-- ----------------------------
+-- Table structure for login
+-- ----------------------------
+DROP TABLE IF EXISTS `login`;
+CREATE TABLE `login` (
+  `idlogin` varchar(10) NOT NULL DEFAULT '',
+  `login_username` varchar(255) DEFAULT NULL,
+  `login_password` varchar(255) DEFAULT NULL,
+  `login_name` varchar(255) DEFAULT NULL,
+  `login_fail` int(11) DEFAULT NULL,
+  `login_create` datetime DEFAULT NULL ON UPDATE current_timestamp(),
+  `login_update` datetime DEFAULT NULL ON UPDATE current_timestamp(),
+  PRIMARY KEY (`idlogin`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of login
+-- ----------------------------
+INSERT INTO `login` VALUES ('2005160001', 'irsyad', 'irsyad123', 'IRSYAD PURBHA', '0', '2020-05-18 13:02:29', '2020-05-18 13:02:29');
 
 -- ----------------------------
 -- Table structure for pelanggan
@@ -136,3 +159,5 @@ INSERT INTO `transaksi` VALUES ('2005070002', '2020-05-07', 'PL002', '2020-05-07
 INSERT INTO `transaksi` VALUES ('2005070003', '2020-05-07', 'PL003', '2020-05-07 08:51:50', '2020-05-07 08:51:50');
 INSERT INTO `transaksi` VALUES ('2005070004', '2020-05-07', 'PL003', '2020-05-07 08:51:59', '2020-05-07 08:51:59');
 INSERT INTO `transaksi` VALUES ('2005070005', '2020-05-07', 'PL004', '2020-05-07 08:52:08', '2020-05-07 08:52:08');
+INSERT INTO `transaksi` VALUES ('2005070006', '2020-05-07', 'PL003', '2020-05-07 10:52:20', '2020-05-07 10:52:20');
+INSERT INTO `transaksi` VALUES ('2005160001', '2020-05-16', 'PL003', '2020-05-16 05:24:51', '2020-05-16 05:24:51');
