@@ -1,7 +1,6 @@
 <?php
 
-	function ambil_pelanggan($kode=NULL)
-	{
+	function ambil_pelanggan($kode=NULL) {
 		$konek = con();
 		if ($kode != NULL) { $cari="WHERE kdpel='$kode'"; } else { $cari=""; }
 		$query = mysqli_query($konek,"SELECT * FROM pelanggan $cari ORDER BY kdpel ASC");
