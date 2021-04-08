@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-<form action="contoh2b.php" method="post">
+<form action="contoh2b.php" method="POST">
 <table>
 	<tr>
 		<th colspan="2" align="center">Form Input Data Barang</th>

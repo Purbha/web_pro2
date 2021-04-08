@@ -4,10 +4,11 @@
 	<title>Contoh 1</title>
 	<style type="text/css">
 	#paragraf {
-		background-color:#0C0;	
+		background-color:#BC292B;	
 	}
     h1 {
-		background-color:#906;
+		/*background-color:#906;*/
+		background-color:#FF0;
         color: #F00;
     }
     th {
@@ -55,7 +56,7 @@
     <p>
 	<?php
 		// Create connection
-		mysqli_connect("127.0.0.1","dbjual","dbjual","dbjual");
+		mysqli_connect("localhost","dbjual","dbjual","dbjual");
 		
 		// Check connection
 		if (mysqli_connect_errno())

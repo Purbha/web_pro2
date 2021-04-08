@@ -30,7 +30,7 @@
         	<td>Username</td><td><input type="text" name="user" maxlength="50" size="25" /></td>
         </tr>	
     	<tr>
-        	<td></td><td><input type="text" name="pass" maxlength="50" size="25" /></td>
+        	<td>Password</td><td><input type="text" name="pass" maxlength="50" size="25" /></td>
         </tr>	
     	<tr>
         	<td>Database</td><td><input type="text" name="db" maxlength="50" size="25"  /></td>

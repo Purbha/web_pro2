@@ -21,8 +21,10 @@
 	$con = mysqli_connect("localhost","dbjual","dbjual","dbjual");
 	
 	//Syntax Insert
-	$sql = "INSERT INTO barang (kdbrg, brg_nama, brg_harga, brg_stok, brg_kategori, brg_garansi, brg_create, brg_update)
-		 VALUES ('$kdbrg','$brg_nama','$brg_harga','$brg_stok','$brg_kategori','$brg_garansi','$brg_create','$brg_update')";	
+	$sql = "INSERT INTO barang (kdbrg, brg_nama, brg_harga, brg_stok, ". 
+		"brg_kategori, brg_garansi, brg_create, brg_update) ". 
+		"VALUES ('$kdbrg','$brg_nama','$brg_harga','$brg_stok','$brg_kategori',". 
+		"'$brg_garansi','$brg_create','$brg_update')";	
 	
 	//Eksekusi
 	$masukan = mysqli_query($con,$sql);
