@@ -13,7 +13,6 @@
 	padding: 10px;
 	margin: 0px;
 }
-
 #header p {
 	font-family: "Lucida Console", Monaco, monospace;
 	font-style: italic;
@@ -21,64 +20,17 @@
 	color: #DBFF6C;
 	text-decoration: underline;	
 }
-
 #footer {
 	background-color: #B6F200;
 	margin: 0px;
 	padding: 5px;
 	text-align: center;
 }
-
 #footer p {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #4D6600;
 }
-
-#menu {
-	width: 200px;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	float: left;
-	display: block;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #CCC;
-}
-#page {
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: auto;
-	background-color: #FFF;
-}
-
-#content {
-	width: 700px;
-	margin: 0px;
-	padding: 0px;
-	float: left;
-}
-
-li {
-	list-style-type: none;
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 0px;
-	font-family: Impact;
-	font-size: 16px;
-}
-ul {
-	margin: 0px;
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-bottom: 20px;
-	padding-left: 0px;
-}
-
-
 h1 {
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #CF9;
@@ -95,15 +47,54 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-
-.clear {
-	clear: both;
+#page {
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+}
+li {
+	list-style-type: none;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	font-family: Impact;
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
 }
 .gambar {
 	margin: 10px;
 	padding: 0px;
 	height: 150px;
 	width: 150px;
+}
+#menu {
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	display: block;
+	float: left;
+}
+#content {
+	width: 700px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.clear {
+	padding: 0px;
+	margin: 0px;
+	clear:both;
 }

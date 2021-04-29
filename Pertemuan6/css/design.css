@@ -1,6 +1,8 @@
 @charset "utf-8";
 #wrapper {
-	padding: 0px; width: 960px; margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto;
+	padding: 0px;
+	width: 960px;
+	margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto;
 }
 #header {
 	background-color: #597700; text-align: center; padding: 10px; margin: 0px;

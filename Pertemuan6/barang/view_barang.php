@@ -20,9 +20,9 @@
 				echo "<td align='center'>".$row['brg_stok']."</td>";
 				echo "<td align='center'>".number_format($row['brg_harga'])."</td>";
 				echo "<td>".$row['brg_kategori']."</td>";
+				echo "<td align='center'>".garansi($row['brg_garansi'])."</td>";
 				echo "<td align='center'>".tanggal($row['brg_create'])."</td>";
 				echo "<td align='center'>".tanggal($row['brg_update'])."</td>";
-				echo "<td align='center'>".garansi($row['brg_garansi'])."</td>";
 				echo "<td align='center'>";
 		?>
         <a href='index.php?page=update_barang'>Update</a>&nbsp;

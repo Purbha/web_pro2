@@ -19,8 +19,10 @@
 		$brg_garansi = $_POST['brg_garansi'];
 		$brg_create = date('Y-m-d H:i:s');
 		$brg_update = date('Y-m-d H:i:s');
-		$sql = "INSERT INTO barang (kdbrg, brg_nama, brg_stok, brg_harga, brg_kategori, brg_garansi, brg_create, brg_update) 
-		VALUES ('$kdbrg','$brg_nama','$brg_stok','$brg_harga', '$brg_kategori','$brg_garansi','$brg_create', '$brg_update')";	
+		$sql = "INSERT INTO barang (kdbrg, brg_nama, brg_stok, brg_harga, brg_kategori,
+			brg_garansi, brg_create, brg_update) 
+			VALUES ('$kdbrg','$brg_nama','$brg_stok','$brg_harga', '$brg_kategori',
+			'$brg_garansi','$brg_create', '$brg_update')";	
 		$result = mysqli_query($konek,$sql);
 		if (!$result) { echo mysqli_error($konek); }
 }

@@ -16,7 +16,7 @@
         <div id="content">
 			<?php require("home.php"); ?>
         </div>
-      	<br class="clear" />
+        <div class="clear">
 	</div>
 
 	<div id="footer"><?php require("footer.php"); ?></div>

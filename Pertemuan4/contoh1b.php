@@ -7,7 +7,7 @@
 
 <body>
 <?php
-	$con = mysqli_connect("127.0.0.1","dbjual","dbjual","dbjual");
+	$con = mysqli_connect("localhost","dbjual","dbjual","dbjual");
 	if (isset($_POST['kdbrg']))
 	{
 		$kdbrg = $_POST['kdbrg'];
