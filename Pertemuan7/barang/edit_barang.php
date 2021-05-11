@@ -51,18 +51,15 @@
     <tr>
     	<td>Garansi</td>
         <td>
-        	<?php
-				if ($brg_garansi == 1) 
-				{
-					echo '<input type="radio" value="1" name="brg_garansi" checked=""checked />Bergaransi &nbsp;';
-					echo '<input type="radio" value="0" name="brg_garansi" />Tidak Bergaransi';
-				}
-				else
-				{
-					echo '<input type="radio" value="1" name="brg_garansi" />Bergaransi &nbsp;';
-					echo '<input type="radio" value="0" name="brg_garansi" checked="checked" />Tidak Bergaransi';
-				}
-			?>
+		<?php
+        if ($brg_garansi == 1)  {
+            echo '<input type="radio" value="1" name="brg_garansi" checked=""checked />Bergaransi &nbsp;';
+            echo '<input type="radio" value="0" name="brg_garansi" />Tidak Bergaransi';
+        } else {
+            echo '<input type="radio" value="1" name="brg_garansi" />Bergaransi &nbsp;';
+            echo '<input type="radio" value="0" name="brg_garansi" checked="checked" />Tidak Bergaransi';
+        }
+        ?>
         </td>
    	</tr>
     <tr>
