@@ -9,10 +9,8 @@
     </tr>
     <?php
 		$no = 1;
-		$data = ambil_barang();
-		
-		while($row = mysqli_fetch_array($data))
-		{
+		$data = ambil_barang();	
+		while($row = mysqli_fetch_array($data)) {
 			$kdbrg = $row['kdbrg'];
 			echo "<tr>";
 				echo "<td align='center'>".$no."</td>";

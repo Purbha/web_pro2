@@ -1,22 +1,19 @@
 <script type="text/javascript">
-	function konfirmasi()
-	{
-		var tanya = confirm('Yakin ingin menghapus data?');
-		if (tanya == true) { return true; } else { return false; } 
-	}
+function konfirmasi() {
+	var tanya = confirm('Yakin ingin menghapus data?');
+	if (tanya == true) { return true; } else { return false; } 
+}
 </script>
-
 <?php
-	$data = ambil_barang($_GET['kdbrg']);
-	while($row = mysqli_fetch_array($data))
-	{
-		$kdbrg = $row['kdbrg'];
-		$brg_nama = $row['brg_nama'];
-		$brg_harga = $row['brg_harga'];
-		$brg_stok = $row['brg_stok'];
-		$brg_kategori = $row['brg_kategori'];
-		$brg_garansi = $row['brg_garansi'];
-	}
+$data = ambil_barang($_GET['kdbrg']);
+while($row = mysqli_fetch_array($data)) {
+	$kdbrg = $row['kdbrg'];
+	$brg_nama = $row['brg_nama'];
+	$brg_harga = $row['brg_harga'];
+	$brg_stok = $row['brg_stok'];
+	$brg_kategori = $row['brg_kategori'];
+	$brg_garansi = $row['brg_garansi'];
+}
 ?>
 <h2>
 	Delete Barang &nbsp;

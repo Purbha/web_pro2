@@ -1,14 +1,13 @@
 <?php
-	$data = ambil_barang($_GET['kdbrg']);
-	while($row = mysqli_fetch_array($data))
-	{
-		$kdbrg = $row['kdbrg'];
-		$brg_nama = $row['brg_nama'];
-		$brg_harga = $row['brg_harga'];
-		$brg_stok = $row['brg_stok'];
-		$brg_kategori = $row['brg_kategori'];
-		$brg_garansi = $row['brg_garansi'];
-	}
+$data = ambil_barang($_GET['kdbrg']);
+while($row = mysqli_fetch_array($data)) {
+	$kdbrg = $row['kdbrg'];
+	$brg_nama = $row['brg_nama'];
+	$brg_harga = $row['brg_harga'];
+	$brg_stok = $row['brg_stok'];
+	$brg_kategori = $row['brg_kategori'];
+	$brg_garansi = $row['brg_garansi'];
+}
 ?>
 <h2>
 	Edit Barang &nbsp;
@@ -52,16 +51,13 @@
     	<td>Garansi</td>
         <td>
         	<?php
-				if ($brg_garansi == 1) 
-				{
-					echo '<input type="radio" value="1" name="brg_garansi" checked=""checked />Bergaransi &nbsp;';
-					echo '<input type="radio" value="0" name="brg_garansi" />Tidak Bergaransi';
-				}
-				else
-				{
-					echo '<input type="radio" value="1" name="brg_garansi" />Bergaransi &nbsp;';
-					echo '<input type="radio" value="0" name="brg_garansi" checked="checked" />Tidak Bergaransi';
-				}
+			if ($brg_garansi == 1) {
+				echo '<input type="radio" value="1" name="brg_garansi" checked=""checked />Bergaransi &nbsp;';
+				echo '<input type="radio" value="0" name="brg_garansi" />Tidak Bergaransi';
+			} else {
+				echo '<input type="radio" value="1" name="brg_garansi" />Bergaransi &nbsp;';
+				echo '<input type="radio" value="0" name="brg_garansi" checked="checked" />Tidak Bergaransi';
+			}
 			?>
         </td>
    	</tr>
