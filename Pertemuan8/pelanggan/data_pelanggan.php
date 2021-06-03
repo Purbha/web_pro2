@@ -28,5 +28,4 @@ function input_pelanggan() {
 		echo '</script>';	
 	}
 }
-
 ?>
