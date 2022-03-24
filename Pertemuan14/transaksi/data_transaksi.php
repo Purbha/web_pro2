@@ -6,6 +6,7 @@
 		if ($kode != NULL) { $cari="WHERE $field LIKE '%$kode%'"; } else { $cari=""; }
 		$sql = "SELECT * FROM transaksi A INNER JOIN pelanggan B ON A.kdpel=B.kdpel $cari 
 			ORDER BY idtrans DESC";
+		//echo $sql."<br>";
 		$query = mysqli_query($konek,$sql);			
 		if (!$query) { echo mysqli_error($konek); } else { return $query; } 		
 	}
@@ -24,6 +25,10 @@
 		if ($kode != NULL) { $cari="WHERE idtrans = '$kode'"; } else { $cari=""; }
 		$query = mysqli_query($konek,"SELECT * FROM detail A INNER JOIN barang B ON A.kdbrg=B.kdbrg $cari 
 			ORDER BY brg_nama ASC");
+		/*
+		echo "SELECT * FROM detail A INNER JOIN barang B ON A.kdbrg=B.kdbrg $cari 
+			ORDER BY brg_nama ASC"."<br>";
+		*/
 		if (!$query) { echo mysqli_error($konek); } else { return $query; } 		
 	}
 	
@@ -106,7 +111,7 @@
 		delete_sementara();
 		echo '<script type="text/javascript">';
 		echo 'alert("Data Berhasil Di Input");';
-		echo 'window.location.assign("http://localhost:81/web_pro2/pertemuan14/index.php?page=add_transaksi")';
+		echo 'window.location.assign("http://localhost/web_pro2/pertemuan14/index.php?page=add_transaksi")';
 		echo '</script>';	
 	}
 	

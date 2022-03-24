@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Contoh 1</title>
-	<style type="text/css">
+	<style>
 	#paragraf {
 		background-color:#BC292B;	
 	}

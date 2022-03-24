@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Contoh 2</title>
-	<style type="text/css">
+	<style>
 		input[type="submit"]
 		{
 			color: #FFFFFF;
