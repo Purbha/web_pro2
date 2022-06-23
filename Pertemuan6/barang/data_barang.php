@@ -25,6 +25,6 @@
 			'$brg_garansi','$brg_create', '$brg_update')";	
 		$result = mysqli_query($konek,$sql);
 		if (!$result) { echo mysqli_error($konek); }
-}
+	}
 
 ?>

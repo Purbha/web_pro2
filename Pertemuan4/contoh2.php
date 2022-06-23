@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>View Data Barang</title>
-    <style type="text/css">
+    <style>
     td, th {
         border: 1px solid #999;
         padding: 10px;
@@ -24,12 +24,10 @@
     </style>
 </head>
 <?php
-	$con = mysqli_connect("127.0.0.1","dbjual","dbjual","dbjual");
-	$sql = "SELECT * FROM barang";
-	$query = mysqli_query($con,$sql);
+	$con = mysqli_connect("localhost","dbjual","dbjual","dbjual");
+	$query = mysqli_query($con,"SELECT * FROM barang");
 ?>
 <body>
-
 <table>
 	<tr>
 	    <th>Kode Barang</th>

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Contoh 2a</title>
-    <style type="text/css">
+    <style>
     body {
         background-color: #CCC;
     }
@@ -45,6 +45,7 @@
         	<select name="brg_kategori">
             	<option value="HARD DISK">Hard Disk</option>
             	<option value="USB FLASH DISK">Usb Flash Disk</option>
+            	<option value="VGA CARD">VGA Card</option>
             </select>
         </td>
     </tr>

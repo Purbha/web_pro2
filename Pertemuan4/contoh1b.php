@@ -4,26 +4,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Contoh 1B</title>
 </head>
-
 <body>
 <?php
 	$con = mysqli_connect("localhost","dbjual","dbjual","dbjual");
-	if (isset($_POST['kdbrg']))
-	{
+	if (isset($_POST['kdbrg']))	{
 		$kdbrg = $_POST['kdbrg'];
 		$sql = "DELETE FROM barang WHERE kdbrg='$kdbrg'";
 		$result = mysqli_query($con,$sql);				
-		if (!$result)
-		{
+		if (!$result) {
 			echo mysqli_error($con);
-		}
-		else
-		{
+		} else {
 			echo '<h2>Data Berhasil Dihapus</h2>';
 		}
-	}
-	else
-	{
+	} else {
 		echo '<h2>Variable Tidak Terdeteksi</h2>';		
 	}
 ?>

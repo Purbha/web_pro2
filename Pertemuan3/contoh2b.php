@@ -30,9 +30,11 @@
 	$masukan = mysqli_query($con,$sql);
 	
 	//Cek apakah insert mengalami error
-	if (!$masukan) { echo mysqli_error($con); } 
-	
-?>
+	if (!$masukan) {
+			echo mysqli_error($con);
+			echo '<h2>Input Data GAGAL</h2>';
+	} else {
+		?>
 <h2>Input Data Berhasil</h2>
 Berikut adalah data-data yang anda masukan:<br />
 Kode Barang: <?php echo $kdbrg; ?><br />
@@ -41,5 +43,6 @@ Harga: <?php echo $brg_harga; ?><br />
 Stok: <?php echo $brg_stok; ?><br />
 Kategori: <?php echo $brg_kategori; ?><br />
 Garansi: <?php echo $brg_garansi; ?><br />
+        <?php } ?>
 </body>
 </html>

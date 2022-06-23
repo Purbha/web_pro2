@@ -31,7 +31,7 @@
 						while($row = mysqli_fetch_array($pel))
 						{ 
 							echo '<option value="'.$row['kdpel'].'" >'.'('.$row['kdpel'].') &nbsp;'.
-							$row['pel_nama'].'</option>>';
+							$row['pel_nama'].'</option>';
 						}
 					echo '</select>';
 				}

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Contoh 1A</title>
-    <style type="text/css">
+    <style>
     td {
         padding: 5px;
         border: 1px solid #999;
@@ -17,9 +17,8 @@
         border: 1px solid #999;
     }
     </style>
-	<script type="text/javascript">
-        function konfirmasi()
-        {
+	<script>
+        function konfirmasi() {
             var tanya = confirm ("Apakah data ingin dihapus?");
             if (tanya == true) { return true; }	else { return false; } 
         }
