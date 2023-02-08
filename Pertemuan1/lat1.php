@@ -56,7 +56,7 @@
     <p>
 	<?php
 		// Create connection
-		mysqli_connect("localhost","dbjual","dbjual","dbjual");
+		mysqli_connect("localhost","root","root","dbjual");
 		
 		// Check connection
 		if (mysqli_connect_errno())
